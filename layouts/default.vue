@@ -2,12 +2,14 @@
   <v-app dark>
 
     <v-toolbar color="elevation-0" fixed app>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-btn flat nuxt to="/">
+        <v-toolbar-title v-text="title" ></v-toolbar-title>
+      </v-btn>
         <v-spacer />  
-        <v-btn flat color="primary">SIGN UP</v-btn>
-        <v-btn flat color="primary">PRICING</v-btn>
-        <v-btn flat color="primary">ABOUT</v-btn>
-        <v-btn flat color="primary">LOGIN</v-btn>
+        <v-btn flat color="primary" nuxt to="/signUp">SIGN UP</v-btn>
+        <v-btn flat color="primary" nuxt to="/pricing">PRICING</v-btn>
+        <v-btn flat color="primary" nuxt to="/about">ABOUT</v-btn>
+        <v-btn flat color="primary" nuxt to="/login">LOGIN</v-btn>
     </v-toolbar>
     <v-content>
       <v-container>
@@ -25,7 +27,7 @@
 export default {
   data () {
     return {
-      title: 'Cool chat'
+      title: '🐦'
     }
   }
 }

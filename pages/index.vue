@@ -14,14 +14,12 @@
           <div class="text-xs-right">
             <em><small>&mdash; Mr. Succes</small></em>
           </div>
-          <hr class="my-3">
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
-          <br>
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt GitHub</a>
         </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
+        <v-card-actions >
+          <v-flex class="text-xs-center">
+            <v-btn color="primary" flat nuxt to="/signUp" class="menu-btns">Zacznij</v-btn>
+            <v-btn color="primary" flat nuxt to="/about" class="menu-btns">Info</v-btn>
+          </v-flex>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -44,6 +42,13 @@
 
    .headline {
      display: block;
+   }
+
+   .menu-btns{
+     border: 2px solid;
+     margin: 20px 20px;
+     font-size: 20px;
+     padding: 20px 20px;
    }
 </style>
 
